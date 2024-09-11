@@ -1,0 +1,194 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>WikiTupac</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ 
+ <body>
+     <main class="table" id="customers_table">
+         <section class="table__header">
+             <h1>WikiTupac</h1>
+             
+             <div class="input-group">
+                 <input type="search" placeholder="Search Data...">
+                 
+             </div>
+             <div class="export__file">
+                 <label for="export-file" class="export__file-btn" title="Export File"></label>
+                 <input type="checkbox" id="export-file">
+                 <div class="export__file-options">
+                     <label>Export As &nbsp; &#10140;</label>
+                     <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                     <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                     <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                     <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                 </div>
+             </div>
+         </section>
+         <section class="table__body">
+             <table>
+                 <thead>
+                     <tr>
+                         <th> Nota <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Alumno <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Materia <span class="icon-arrow">&UpArrow;</span></th>
+                         <!-- <th> Fecha <span class="icon-arrow">&UpArrow;</span></th> -->
+                         <th> Comprensividad <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Resumido <span class="icon-arrow">&UpArrow;</span></th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <!-- <tr>
+                         <td class="status cancelled"> 1 </td>
+                         <td>Zinzu Chan Lee</td>
+                         <td> Seoul </td>
+                         <td> 17/12, 2022 </td>
+                         <td>
+                             <p class="status delivered">Delivered</p>
+                         </td>
+                         <td> <strong> 5 </strong></td>
+                     </tr> -->
+                     <tr>
+                         <td class="status cancelled"> 2 </td>
+                         <td> Jeet Saru </td>
+                         <td> Matematica </td>
+                         <!-- <td> 27/8, 2023 </td> -->
+                         <td>
+                            <strong>4</strong>
+                         </td>
+                         <td> <strong>4</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status cancelled"> 3</td>
+                         <td> Sonal Gharti </td>
+                         <td> Algebra </td>
+                         <!-- <td> 14/3, 2023 </td> -->
+                         <td>
+                            <strong>3</strong>
+                         </td>
+                         <td> <strong>3</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 4</td>
+                         <td> Alson GC </td>
+                         <td> Sistemas </td>
+                         <!-- <td> 25/5, 2023 </td> -->
+                         <td>
+                            <strong>4</strong>
+                         </td>
+                         <td> <strong>1</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 5</td>
+                         <td> Sarita Limbu </td>
+                         <td> Algoritmos </td>
+                         <!-- <td> 23/4, 2023 </td> -->
+                         <td>
+                            <strong>2</strong>
+                         </td>
+                         <td> <strong>2</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 6</td>
+                         <td> Alex Gonley </td>
+                         <td> Filosofia </td>
+                         <!-- <td> 23/4, 2023 </td> -->
+                         <td>
+                            <strong>3</strong>
+                         </td>
+                         <td> <strong>1</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 7</td>
+                         <td> Jeet Saru </td>
+                         <td> Arquitectura </td>
+                         <!-- <td> 20/5, 2023 </td> -->
+                         <td>
+                            <strong>1</strong>
+                         </td>
+                         <td> <strong>2</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 8</td>
+                         <td> Aayat Ali Khan </td>
+                         <td> Geografia </td>
+                         <!-- <td> 30/2, 2023 </td> -->
+                         <td>
+                            <strong>5</strong>
+                         </td>
+                         <td> <strong>3</strong> </td>
+                     </tr>
+                     <tr>
+                         <td class="status delivered"> 9</td>
+                         <td> Alson GC </td>
+                         <td> Practicas  </td>
+                         <!-- <td> 22/12, 2023 </td> -->
+                         <td>
+                            <strong>2</strong>
+                         </td>
+                         <td> <strong>5</strong> </td>
+                     </tr>
+                     <!-- <tr>
+                         <td> 9</td>
+                         <td> Alson GC </td>
+                         <td> Dhaka </td>
+                         <td> 22/12, 2023 </td>
+                         <td>
+                             <p class="status cancelled">Cancelled</p>
+                         </td>
+                         <td> <strong>$249.99</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 9</td>
+                         <td> Alson GC </td>
+                         <td> Dhaka </td>
+                         <td> 22/12, 2023 </td>
+                         <td>
+                             <p class="status cancelled">Cancelled</p>
+                         </td>
+                         <td> <strong>$249.99</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 9</td>
+                         <td> Alson GC </td>
+                         <td> Dhaka </td>
+                         <td> 22/12, 2023 </td>
+                         <td>
+                             <p class="status cancelled">Cancelled</p>
+                         </td>
+                         <td> <strong>$249.99</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 9</td>
+                         <td> Alson GC </td>
+                         <td> Dhaka </td>
+                         <td> 22/12, 2023 </td>
+                         <td>
+                             <p class="status cancelled">Cancelled</p>
+                         </td>
+                         <td> <strong>$249.99</strong> </td>
+                     </tr> -->
+                 </tbody>
+             </table>
+         </section>
+     </main>
+     <script src="script.js"></script>
+ 
+ </body>
+ 
+ </html>
