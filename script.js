@@ -203,3 +203,19 @@ const downloadFile = function (data, fileType, fileName = '') {
     a.click();
     a.remove();
 }
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const usernameLS = localStorage.getItem("nombre de usuario");
+const passwordLS = localStorage.getItem("contraseña");
+const formLogin = document.querySelector("#loginFormID");
+const usernameLogin = document.querySelector("#loginUsername");
+const passwordLogin = document.querySelector("#loginPassword");
+
+// formLogin.addEventListener("submit", function(e) {
+
+//     if (usernameLogin.value !== usernameLS)
+
+// })
