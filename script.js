@@ -229,10 +229,10 @@ const passwordSignIn = document.querySelector("#signInPassword");
 const formSignIn = document.querySelector("#IDform-SignIn");
 const headerSignIn = document.querySelector("#signInHeader")
 
-formSignIn.addEventListener("submit", function(e) {
-    e.preventDefault();
+// formSignIn.addEventListener("submit", function(e) {
+//     e.preventDefault();
 
-    if(nombreSignIn.value == "" || apellidoSignIn.value == "" || passwordSignIn == "") {
-        headerSignIn.innerHTML = `<h1>ONICHAN</h1>`
-    }
-})
+//     if(nombreSignIn.value == "" || apellidoSignIn.value == "" || passwordSignIn == "") {
+//         headerSignIn.innerHTML = `<h1>ONICHAN</h1>`
+//     } else
+// })
