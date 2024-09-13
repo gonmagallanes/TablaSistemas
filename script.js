@@ -1,4 +1,4 @@
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLERO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const search = document.querySelector('.input-group input'),
     table_rows = document.querySelectorAll('tbody tr'),
@@ -219,3 +219,20 @@ const passwordLogin = document.querySelector("#loginPassword");
 //     if (usernameLogin.value !== usernameLS)
 
 // })
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGNIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const nombreSignIn = document.querySelector("#signInNombre");
+const apellidoSignIn = document.querySelector("#signInApellido");
+const passwordSignIn = document.querySelector("#signInPassword");
+const formSignIn = document.querySelector("#IDform-SignIn");
+const headerSignIn = document.querySelector("#signInHeader")
+
+formSignIn.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if(nombreSignIn.value == "" || apellidoSignIn.value == "" || passwordSignIn == "") {
+        headerSignIn.innerHTML = `<h1>ONICHAN</h1>`
+    }
+})
