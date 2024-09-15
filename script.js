@@ -205,34 +205,14 @@ const downloadFile = function (data, fileType, fileName = '') {
 }
 
 
+const botonerSalida = document.querySelector("#botonesSalida");
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+const nombreHeader = localStorage.getItem("nombre de usuario");
 
-const usernameLS = localStorage.getItem("nombre de usuario");
-const passwordLS = localStorage.getItem("contraseña");
-const formLogin = document.querySelector("#loginFormID");
-const usernameLogin = document.querySelector("#loginUsername");
-const passwordLogin = document.querySelector("#loginPassword");
+if(nombreHeader !== "" && nombreHeader !== null) {
 
-// formLogin.addEventListener("submit", function(e) {
+    botonerSalida.innerHTML = "<h1>asd</h1>"
 
-//     if (usernameLogin.value !== usernameLS)
-
-// })
+}
 
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGNIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-const nombreSignIn = document.querySelector("#signInNombre");
-const apellidoSignIn = document.querySelector("#signInApellido");
-const passwordSignIn = document.querySelector("#signInPassword");
-const formSignIn = document.querySelector("#IDform-SignIn");
-const headerSignIn = document.querySelector("#signInHeader")
-
-// formSignIn.addEventListener("submit", function(e) {
-//     e.preventDefault();
-
-//     if(nombreSignIn.value == "" || apellidoSignIn.value == "" || passwordSignIn == "") {
-//         headerSignIn.innerHTML = `<h1>ONICHAN</h1>`
-//     } else
-// })

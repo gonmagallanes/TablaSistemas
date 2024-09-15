@@ -403,6 +403,13 @@ thead th.active,tbody td.active {
     box-shadow: 0px 0px 10px black;
 }
 
+.error-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
 @keyframes slide-in-left {
     0% {
       transform: translateX(-1000px);
