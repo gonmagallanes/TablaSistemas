@@ -205,14 +205,5 @@ const downloadFile = function (data, fileType, fileName = '') {
 }
 
 
-const botonerSalida = document.querySelector("#botonesSalida");
-
-const nombreHeader = localStorage.getItem("nombre de usuario");
-
-if(nombreHeader !== "" && nombreHeader !== null) {
-
-    botonerSalida.innerHTML = "<h1>asd</h1>"
-
-}
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  MAIN  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

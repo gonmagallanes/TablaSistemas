@@ -395,7 +395,7 @@ thead th.active,tbody td.active {
     display: flex;
     position: fixed;
     justify-content: right;
-    padding-right: 20px;
+    padding: 10px;
     align-items: center;
     top: 0;
     background-color: #d8d4dc;
